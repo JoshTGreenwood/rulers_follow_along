@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Josh Greenwood"]
   spec.email         = ["joshua.t.greenwood@gmail.com"]
   spec.summary       = %q{Following along with Noah Gibbs' Rebuilding Rails.}
-  spec.description   = %q{Following along with Noah Gibbs' Rebuilding Rails.}
+  spec.description   = %q{Following along with Noah Gibbs' Rebuilding Rails. Not for production use}
   spec.homepage      = "https://github.com/JoshTGreenwood/rulers_follow_along"
   spec.license       = "MIT"
 
@@ -18,6 +18,9 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_runtime_dependency "rack"
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rack-test"
+  spec.add_development_dependency "test-unit"
 end
